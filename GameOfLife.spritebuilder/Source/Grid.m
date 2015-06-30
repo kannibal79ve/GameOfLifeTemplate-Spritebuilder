@@ -69,9 +69,9 @@ static const int GRID_COLUMNS = 10;
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
 {
-    let row = touchPosition.y / _cellHeight;
-    let column = touchPosition.x / _cellWidth;
-    return _gridArray[row][column]
+    int row = touchPosition.y / _cellHeight;
+    int column = touchPosition.x / _cellWidth;
+    return _gridArray[row][column];
 }
 
 @end
